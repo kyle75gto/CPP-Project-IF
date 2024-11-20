@@ -4,11 +4,9 @@
 #include "BlackScholesPricer.h"
 
 int main() {
-<<<<<<< HEAD
 	PutOption x(5, 101);
 	BlackScholesPricer pricer(&x, 100, 0.01, 0.1) ;
 	std::cout << pricer() << std::endl << "delta :" << pricer.delta() <<std::endl;
-=======
 	//x = Option(5.0);
 	CallOption x = CallOption(1.0, 100.0);
 	double y = x.payoff(120);
@@ -40,6 +38,5 @@ int main() {
     std::cout << "Value at (2, 1): " << value << std::endl;
     */
 
->>>>>>> fab3448c2ae4022cdf6cf892b477f76746ef9fc8
 	return 0;
 }	
