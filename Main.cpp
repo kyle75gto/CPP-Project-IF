@@ -4,17 +4,17 @@
 #include "BlackScholesPricer.h"
 
 int main() {
-	PutOption x(5, 101);
+	/*/PutOption x(5, 101);
 	BlackScholesPricer pricer(&x, 100, 0.01, 0.1) ;
 	std::cout << pricer() << std::endl << "delta :" << pricer.delta() <<std::endl;
 	//x = Option(5.0);
 	CallOption x = CallOption(1.0, 100.0);
 	double y = x.payoff(120);
-	std::cout << y;
+	std::cout << y;*/
     
-    /*
+    
     // Example usage of BinaryTree
-    BinaryTree<double> tree;
+    BinaryTree<int> tree;
     tree.setDepth(3);
 
     // Setting some values in the tree
@@ -36,7 +36,6 @@ int main() {
     // Example of retrieving a node value
     double value = tree.getNode(2, 1);
     std::cout << "Value at (2, 1): " << value << std::endl;
-    */
 
 	return 0;
 }	

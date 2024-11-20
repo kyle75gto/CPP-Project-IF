@@ -8,8 +8,7 @@ class BinaryTree
 {
 private:
 	int _depth; // _depth represente N
-	std::vector<std::vector<T>> _tree; // on initialise le vecteur de vecteur de type T
-
+	std::vector <std::vector <T>> _tree; // on initialise le vecteur de vecteur de type T
 
 public:
 
