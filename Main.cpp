@@ -1,10 +1,11 @@
 #include "CallOption.h"
+#include "PutOption.h"
 #include <iostream>
+#include "BlackScholesPricer.h"
 
 int main() {
-	//x = Option(5.0);
-	CallOption x = CallOption(1.0, 100.0);
-	double y = x.payoff(160);
-	std::cout << y;
+	PutOption x(5, 101);
+	BlackScholesPricer pricer(&x, 100, 0.01, 0.1) ;
+	std::cout << pricer() << std::endl << "delta :" << pricer.delta() <<std::endl;
 	return 0;
-}
+}	

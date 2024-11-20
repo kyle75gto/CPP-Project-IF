@@ -5,7 +5,7 @@ class PutOption :
 {
 public:
     PutOption(double, double);
-    double Payoff(double) const;
+    double payoff(double) const override;
     optionType GetOptionType() const override;
 };
 
